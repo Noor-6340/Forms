@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMIT Registration Form</title>
+</head>
+<body>
+  <h1 style="text-align:center;">SMIT Registration Form</h1>
+  <p><strong>In the contemporary era, staying updated with technological innovations has become imperative for staying competitive. It's akin to engaging in a high-stakes competition. Understanding this crucial aspect, SMIT provides diverse IT courses aimed at empowering individuals to navigate and excel in the dynamic IT landscape. By enrolling in these courses, you arm yourself with the requisite expertise to pursue your goals and confront the myriad challenges inherent in the vast IT domain.</strong></p>
+  <p style="text-align:center;">This form has been specially crafted to gather input for our country survey. Kindly complete the form to enable us to streamline our operations and offer optimal solutions for our courses. Your participation is greatly appreciated and will contribute to the enhancement of our services.</p>
+  <form action="submit_registration.php" method="POST">
+    <hr/>
+    <fieldset>
+      <legend>Application Form</legend>
+      <p><strong>Select city:</strong><br/>
+        <select name="city" required>
+            <option value="" disabled selected>Select city</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Multan">Multan</option>
+            <option value="Sukkur">Sukkur</option>
+        </select>
+      </p>
+      <p><strong>Select course:</strong><br/>
+        <select name="course" required>
+            <option value="" disabled selected>Choose course</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile Repairing">Mobile Repairing</option>
+            <option value="Graphics">Graphics</option>
+            <option value="Ms office">Ms office</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+      </p>
+      <p><strong>Full name:</strong>
+        <input type="text" name="Full name" placeholder="Full name" maxlength="25" required />
+      </p>
+      <p><strong>Father name:</strong>
+        <input type="text" name="Father name" placeholder="Father name" maxlength="30" required />
+      </p>
+      <p>
+        <label><strong>Email:</strong> <input type="email" name="userEmail" placeholder="email" required/></label><br/><br/>
+        <label><strong>Phone:</strong> <input type="tel" name="contact" placeholder="contact" required/></label><br/><br/>
+        <label><strong>CNIC:</strong> <input type="text" name="cnic" placeholder="CNIC" maxlength="15" required /></label><br/><br/>
+        <label><strong>Father's CNIC (optional):</strong> <input type="text" name="Father cnic" placeholder="Father's CNIC" maxlength="15"/></label><br/><br/>
+        <label><strong>Date of Birth:</strong> <input type="date" name="date of Birth" placeholder="Date of Birth" required/></label><br /><br />
+      </p>
+      <p><strong>Select Gender:</strong><br/>
+        <select name="Select Gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+        </select>
+      </p>
+      <p><strong>Address:</strong><br/>
+        <textarea name="Address" placeholder="Address" cols="30" rows="5" required></textarea> 
+      </p>  
+      <p><strong>Last Qualification:</strong><br/>
+        <select name="Qualification" required>
+            <option value="" disabled selected>Last Qualification</option>
+            <option value="MBA">MBA</option>
+            <option value="BBA">BBA</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Matric">Matric</option>
+            <option value="Other">Other</option>
+        </select>
+      </p>
+      <p><strong>Do you have a Laptop?</strong><br/>
+        <select name="Do you have a Laptop?" required>
+            <option value="" disabled selected></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+      </p>
+      <p><label><strong>Picture:</strong></label><br/>
+        <input type="file" name="file" /><br/>
+        <span style="font-size:12px;">With white or blue background<br/>File size must be less than 1MB<br/>File type: jpg, jpeg, png<br/>Upload your recent passport size picture<br/>Your Face should be clearly visible without any Glasses</span>
+      </p>
+      <br />
+      <ol>
+        <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SMIT</li>
+        <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
+        <li>Defiance will render my admission canceled at any point in time.</li>
+        <li>Upon completion, of the course, I will complete the required project by SMIT.</li>
+        <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+      </ol>
+      <input type="submit" name="button" />
+    </fieldset>
+  </form>
+</body>
+</html>
